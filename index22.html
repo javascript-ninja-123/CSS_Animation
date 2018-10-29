@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+   body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color:black;
+     min-height: 100vh;
+   }
+   div{
+      color:white;
+      border:3px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size:2rem;
+      padding:3rem 4rem;
+   }
+
+   div:hover{
+     animation:shake .3s linear infinite;
+   }
+
+   @keyframes shake {
+     33%{
+       transform:rotate(-10deg);
+     }
+     66%{
+       transform:rotate(10deg);
+     }
+     100%{
+       transform:rotate(-10deg);
+     }
+   }
+  </style>
+</head>
+<body>
+
+  <div>
+    Hover me
+  </div>
+</body>
+</html>

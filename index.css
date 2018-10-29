@@ -1,0 +1,69 @@
+body{
+  perspective:500px;
+}
+
+.poo{
+  width:7rem;
+  height:7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size:2rem;
+  background-color:gold;
+  border-radius:10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition:all 1s ease-in;
+  position:relative;
+  overflow:hidden;
+}
+.poo p{
+  z-index:2;
+}
+
+.poo:before{
+  content:'';
+  z-index:1;
+  position:absolute;
+  background-color:skyblue;
+  width:150%;
+  height:150%;
+  top:90%;
+  left:-110%;
+  transition:all 1s ease-in;
+  transform:rotate(45deg);
+}
+
+.poo:hover{
+  color:gold;
+  background-color:white;
+}
+
+.poo:hover:before{
+  top:0;
+  left:0;
+}
+
+.second{
+  width:5rem;
+  height:5rem;
+  background-color:grey;
+  transform-origin: top left;
+  transition:all .4s ease-in;
+}
+
+.second:hover{
+  transform:rotate(30deg);
+}
+
+.third{
+  display: block;
+  width:4rem;
+  height:4rem;
+  background-color:black;
+  transition:all .4s ease-in;
+}
+
+.third:hover{
+  transform: rotateY(90deg);
+}
